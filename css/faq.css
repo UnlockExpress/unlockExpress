@@ -1,0 +1,376 @@
+
+/* HEADER GLOBAL */
+.header {
+    background: #ffffff;
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO + TEXTE */
+.header-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo i {
+    font-size: 2rem;
+    color: #ff7a00;
+    /* orange signature */
+}
+
+/* TEXTE */
+.header-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.header-text .brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.header-text .sub {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .header-logo i {
+        font-size: 1.7rem;
+    }
+
+    .header-text .brand {
+        font-size: 1.2rem;
+    }
+
+    .header-text .sub {
+        font-size: 0.85rem;
+    }
+}
+
+/*TITLE*/
+h1.titre {
+    text-transform: uppercase;
+    width: max-content;
+    margin: auto;
+    background-clip: text;
+    margin: 50px auto;
+    font-size: 2.5rem;
+    color: #1e40af;
+}
+
+/*FAQ*/
+.faq {
+    margin: 40px 0px 200px;
+    position: relative;
+}
+
+.faq .menu {
+    margin: 0 20px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1002;
+    display: none;
+}
+
+.menu .hamburger {
+    width: 45px;
+    height: 7px;
+    display: block;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #2563eb;
+}
+
+.faq-container {
+    padding: 20px;
+}
+
+/*FAQ-LINKS*/
+.faq-container .faq-links {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: 1001;
+    width: 300px;
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+.faq-links a {
+    display: block;
+    background-color: #ddd;
+    margin: 20px 0;
+    padding: 5px;
+    text-decoration: none;
+    color: #222;
+    font-family: cursive;
+    font-size: 1.2rem;
+    word-break: normal;
+    transition: .2s;
+
+    &:hover {
+        background-color: #ccc;
+    }
+
+}
+
+.faq-links a.active {
+    border-right: 5px solid #1e40af;
+}
+
+/*FAQ-SHOW*/
+.faq-show {
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+}
+
+.faq-show .container {
+    margin: auto;
+}
+
+.faq-show .container.none {
+    display: none !important;
+}
+
+.container .section-header h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: cursive;
+}
+
+.container .section-header h2 i {
+    color: #e56d00;
+}
+
+.container .section-header p {
+    text-align: center;
+    font-family: cursive;
+    color: #555;
+    max-width: 400px;
+    word-break: normal;
+    margin: 10px auto 30px;
+}
+
+.faq-grid {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+
+.faq-card {
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: default;
+    height: 65px;
+    overflow: hidden;
+    position: relative;
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+.faq-question {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px 20px 35px;
+
+    &:hover span {
+        text-decoration: underline;
+        color: #1e40af;
+    }
+}
+
+.faq-card>hr {
+    width: 90%;
+    margin: -20px auto 20px;
+}
+
+.faq-answer{
+    padding: 0 20px 20px 20px;
+}
+.faq-answer p em {
+color: #1e40af;
+}
+
+.faq-card>i {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    font-size: 20px;
+    cursor: default;
+}
+
+.view {
+    display: none !important;
+}
+
+.less-sign {
+    position: absolute;
+    right: 15px;
+    cursor: default;
+    top: 29px;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    display: block;
+}
+
+
+.display {
+    height: max-content !important;
+    background-color: rgb(255, 252, 247);
+}
+
+/* Responsive */
+@media (max-width: 1500px) {
+    .faq-show {
+        width: 70%;
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .faq-show {
+        width: 80%;
+        margin-left: 200px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .faq-show {
+        width: 98%;
+        margin: 0;
+    }
+
+    .faq-show .container {
+        width: 98%;
+    }
+
+    .faq .menu {
+        display: block;
+    }
+
+    .faq-container .faq-links {
+        display: none;
+    }
+
+    .faq-container .faq-links.block {
+        display: block !important;
+    }
+}
+
+
+
+
+
+
+
+
+/*footer*/
+/* Bloc urgence en footer */
+.footer-urgence {
+    background: #f5f5f5;
+    padding: 45px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.footer-urgence h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.footer-urgence p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Boutons */
+.footer-urgence-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-urgence-call {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.25s ease;
+}
+
+.btn-urgence-call:hover {
+    background: #1e40af;
+}
+
+.btn-urgence-devis {
+    background: #ff7a00;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.btn-urgence-devis:hover {
+    background: #e56d00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .footer-urgence h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-urgence-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-urgence-call,
+    .btn-urgence-devis {
+        width: 100%;
+        justify-content: center;
+    }
+}

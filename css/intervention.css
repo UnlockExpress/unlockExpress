@@ -1,0 +1,302 @@
+
+/*Zones d'intervention*/
+.zones-intervention {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.zones-intervention h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.zones-texte {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Boutons */
+.zones-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-phone {
+    background: #2563eb; /* bleu */
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.05rem;
+    transition: 0.25s ease;
+}
+
+.btn-phone:hover {
+    background: #1e40af;
+}
+
+.btn-whatsapp {
+    background: #25d366; /* vert WhatsApp */
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.05rem;
+    transition: 0.25s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+.oise {
+    margin: 30px auto -40px;
+    width: 80%;
+}
+.oise img{
+    width: 80%;
+    height: 500px;
+    border-radius: 20px;
+    transition: .3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+/* Responsive */
+@media (max-width: 480px) {
+    .zones-intervention h2 {
+        font-size: 1.6rem;
+    }
+    .zones-texte {
+        font-size: 1rem;
+    }
+
+    .btn-phone,
+    .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 680px) {
+.oise {
+    width: 98%;
+}
+.oise img{
+    width: 100%;
+    height: 400px;
+}
+}
+
+
+/*Nous trouver*/
+.nous-trouver {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.nous-trouver h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.nous-trouver h2 i {
+    color: #ff7a00;
+    font-size: 1.4rem;
+}
+
+.nous-trouver .adresse {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 1rem;
+     width: fit-content;
+    margin: auto;
+}
+
+.map-wrapper {
+    width: fit-content;
+    max-width: 98%;
+    margin: 30px auto 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+ .map-wrapper {
+    height: 260px;
+}
+}
+
+/*Toutes nos villes d'intervention*/
+.villes-intervention {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.villes-intervention h2 {
+    text-align: left;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Un bloc sous l’autre */
+.villes-blocs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Bloc département */
+.villes-bloc {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+}
+.villes-bloc h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #ff7a00;
+}
+
+.villes-bloc h3 span {
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 6px;
+}
+
+.villes-bloc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.villes-bloc ul li {
+    padding: 3px 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+
+
+/* villes-bloc */
+.villes-bloc ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-75 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-92 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*footer*/
+/* Bloc urgence en footer */
+.footer-urgence {
+    background: #f5f5f5;
+    padding: 45px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.footer-urgence h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.footer-urgence p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Boutons */
+.footer-urgence-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-urgence-call {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.25s ease;
+}
+
+.btn-urgence-call:hover {
+    background: #1e40af;
+}
+
+.btn-urgence-devis {
+    background: #ff7a00;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.btn-urgence-devis:hover {
+    background: #e56d00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .footer-urgence h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-urgence-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-urgence-call,
+    .btn-urgence-devis {
+        width: 100%;
+        justify-content: center;
+    }
+}

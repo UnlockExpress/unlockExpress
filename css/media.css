@@ -1,0 +1,180 @@
+/* Responsive */
+@media (max-width: 768px) {
+   
+    .header {
+        width: 100%;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        backdrop-filter: blur(5px) !important;
+    }
+
+    .header.scrolled {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .hero {
+        min-height: 80vh !important;
+    }
+
+    .hero-text {
+        margin-left: 0;
+    }
+
+    .hero-text h1 {
+        text-align: center;
+    }
+
+    .cta-buttons a:nth-child(1) {
+        width: 80%;
+        margin: 20px auto 0;
+        text-align: center !important;
+        display: block;
+    }
+
+    .cta-buttons a:nth-child(2) {
+        display: none !important;
+    }
+
+    .cta-buttons a:nth-child(3) {
+        display: none !important;
+    }
+
+    .badge {
+        padding: 2px;
+    }
+
+    .hero-text>h1 {
+        font-size: 35px;
+    }
+
+    .features-grid {
+        display: none !important;
+
+    }
+
+    .highlight-p {
+        margin: auto;
+        width: 70%;
+        font-size: 10px;
+        font-size: 0.9rem !important;
+    }
+
+    .stats-card {
+        padding: 30px;
+        display: none !important;
+    }
+
+    /*SECTION STATS*/
+    .unlock-stats {
+        padding: 10px 0px;
+    }
+
+    .stat-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px;
+        width: 90%;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .stat-card i {
+        font-size: 2rem;
+        color: #397be6;
+        margin-bottom: 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.6rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .stat-card p {
+        opacity: 0.8;
+        margin-top: 5px;
+    }
+
+    /*SECTION */
+    .services,
+    .tarifs,
+    .faq,
+    .contact {
+        padding: 2rem 0;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header i {
+        margin-right: 0.5rem;
+    }
+
+    .services-card {
+        background-color: red !important;
+    }
+
+    .service-card {
+        padding: 2rem 1rem;
+        margin: 0 10px;
+    }
+
+    /*WHY US*/
+    .why-us {
+        width: 95%;
+        padding: 30px 0;
+    }
+
+    .why {
+        margin-bottom: 0;
+    }
+
+    .why-us .information {
+        width: 95%;
+        text-align: center;
+    }
+
+    .indic {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    /*FAQ*/
+
+    .faq-grid {
+        width: 90% !important;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+    .cta-button {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+}

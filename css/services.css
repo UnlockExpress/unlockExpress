@@ -162,7 +162,6 @@ nav a {
   border-bottom-color: var(--accent);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   transform: translateY(-2px);
-  animation: bubbleFloat 2.5s ease-in-out infinite;
 }
 
 /* Focus */

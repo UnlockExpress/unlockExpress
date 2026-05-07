@@ -252,7 +252,6 @@ body {
     border: 2px solid rgba(250, 204, 21, 0.4);
     box-shadow: 0 10px 30px rgba(250, 204, 21, 0.2);
     margin-top: 85px;
-    animation: bubbleFloat 2.5s ease-in-out infinite;
 }
 
 .cta-buttons {
@@ -260,7 +259,6 @@ body {
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    animation: bubbleFloat 2.5s ease-in-out infinite;
 }
 
 @keyframes bubbleFloat {
@@ -1809,7 +1807,6 @@ i.snap {
     align-items: center;
     justify-content: center;
     transition: 0.25s ease;
-    animation: bubbleFloat 2.5s ease-in-out infinite;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
